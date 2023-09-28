@@ -22,6 +22,7 @@ jobs:
                         tag: ${{ inputs.tag }}
                 secrets:
                         GH_PAT: ${{ secrets.GH_PAT }}
+                        GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
 
         release-push:
                 if: inputs.tag == ''
